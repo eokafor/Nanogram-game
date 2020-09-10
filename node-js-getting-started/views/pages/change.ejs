@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .fob{
+        background: #880030;
+      }
+
+      .part{
+        background-color: white;
+        height: 30px;
+        width: 200px;
+      }
+
+      .part1{
+        color: black;
+        background-color: #478C00;
+        height: 30px;
+        width: 200px;
+
+      }
+
+      .part1:hover{
+        background-color: #83C500;
+      }
+
+      .hd2{
+        color: #83C500;
+        font-size: 2em;
+      }
+
+      .bar li{
+         float: left;
+       }
+
+
+       .bar {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: #34011E;
+       }
+
+       .bar li a{
+         display: block;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+       }
+
+       .bar li a:hover:not(.active){
+         background-color: #111;
+       }
+
+       .active{
+         background-color: #83C500;
+       }
+    </style>
+  </head>
+  <body class="fob">
+    <h2 class="hd2">Enter the following fields to edit a user</h2>
+    <% rows.forEach(function(r) { %>
+    <form class="edit" action="/change" method="post">
+      <input class="part" type="number" name="id" value = "<%= r.id %>" readonly><br><br>
+      <input class="part" type="text" name="name" value = "<%= r.name %>" placeholder="NAME" required><br><br>
+      <input class="part" type="number" name="size" value = "<%= r.size %>" placeholder="SIZE" required><br><br>
+      <input class="part" type="number" name="height" value = "<%= r.height %>" placeholder="HEIGHT" required><br><br>
+      <input class="part" type="text" name="type" value = "<%= r.type %>" placeholder="TYPE" required><br><br>
+      <input class="part" type="date" name="DOB" value = "<%= r.dob %>" placeholder="DATE OF BIRTH" required><br><br>
+      <select class="part" name="gender" >
+        <option selected="selected"><%= r.gender %></option>
+        <option value="Male">MALE</option>
+        <option value="Female">FEMALE</option>
+        <option value="Other">OTHER</option>
+      </select><br><br>
+      <input class="part" type="text" name="sexuality" value = "<%= r.sexuality %>" placeholder="SEXUALITY" required><br><br>
+      <input class="part" type="text" name="ethnicity" value = "<%= r.ethnicity %>" placeholder="ETHNICITY" required><br><br>
+      <input class="part" type="text" name="occupation" value = "<%= r.occupation %>" placeholder="OCCUPATION" required><br><br>
+      <input class="part1" type="submit" name="sub" value="send to server" placeholder="ADD" ><br><br>
+
+    </form>
+    <% }); %>
+
+  </body>
+</html>

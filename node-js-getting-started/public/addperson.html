@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .fob{
+        background: #880030;
+      }
+
+      .part{
+        background-color: white;
+        height: 30px;
+        width: 200px;
+      }
+
+      .part1{
+        color: black;
+        background-color: #478C00;
+        height: 30px;
+        width: 200px;
+
+      }
+
+      .part1:hover{
+        background-color: #83C500;
+      }
+
+      .hd2{
+        color: #83C500;
+        font-size: 2.5em;
+      }
+
+      .bar li{
+         float: left;
+       }
+
+
+       .bar {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: #34011E;
+       }
+
+       .bar li a{
+         display: block;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+       }
+
+       .bar li a:hover:not(.active){
+         background-color: #111;
+       }
+
+       .active{
+         background-color: #83C500;
+       }
+    </style>
+  </head>
+  <body class="fob">
+    <ul class="bar">
+      <li><a class="active" href="people.html">Home</a></li>
+      <li><a href="display">Database</a></li>
+      <li><a href="changer.html">Edit</a></li>
+      <li><a href="deleteperson.html">Delete</a></li>
+      <li><a href="db">Display</a></li>
+    </ul>
+    <h2 class="hd2">Fill in the data below</h2>
+    <form class="add" action="/addperson" method="post">
+        <input class="part" type="text" name="name" value="" placeholder="NAME"><br><br>
+        <input class="part" type="number" name="size" value="" placeholder="SIZE"><br><br>
+        <input class="part" type="number" name="height" value="" placeholder="HEIGHT"><br><br>
+        <input class="part" type="text" name="type" value="" placeholder="TYPE"><br><br>
+        <input class="part" type="date" name="DOB" value="" placeholder="DATE OF BIRTH"><br><br>
+        <select class="part" name="gender" >
+          <option value="Male">MALE</option>
+          <option value="Female">FEMALE</option>
+          <option value="Other">OTHER</option>
+        </select><br><br>
+        <input class="part" type="text" name="sexuality" value="" placeholder="SEXUALITY"><br><br>
+        <input class="part" type="text" name="ethnicity" value="" placeholder="ETHNICITY"><br><br>
+        <input class="part" type="text" name="occupation" value="" placeholder="OCCUPATION"><br><br>
+        <input class="part1" type="submit" name="sub" value="send to server" placeholder="ADD" ><br><br>
+    </form>
+
+  </body>
+</html>

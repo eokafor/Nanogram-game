@@ -1,0 +1,86 @@
+html{
+  height = 100%;
+}
+
+body{
+  height = 100%;
+  background: #AA3939;
+}
+
+table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td{
+  padding: 3px;
+}
+
+table#t01{
+  background-color: grey;
+  position: relative;
+  top: 20%;
+  left: 29%;
+}
+
+p#das{
+  color: yellow;
+}
+
+h1#h50{
+  position:relative;
+  left: 28%
+}
+
+#f01{
+  position: relative;
+  padding: 10px;
+  left: 25%;
+
+}
+#bttn{
+
+  padding: 15px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+}
+
+#bttn:hover{
+  background-color: green;
+  color: white;
+}
+
+#bttn1{
+
+  padding: 15px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  border: 2px solid blue;
+}
+
+#bttn1:hover{
+  background-color: blue;
+  color: white;
+}
+
+
+#bttn2{
+
+  padding: 15px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  border: 2px solid orange;
+}
+
+#bttn2:hover{
+  background-color: orange;
+  color: white;
+}
+
+.last {background:#343838}
+.first {background: grey}
+.middle {background: white}

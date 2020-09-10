@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .drop{
+        background: #880030;
+      }
+
+      .hd2{
+        color: #83C500;
+
+      }
+
+      .hd3{
+        color: white;
+      }
+
+      .part{
+        background-color: white;
+        height: 30px;
+        width: 200px;
+      }
+
+      .part1{
+        color: black;
+        background-color: #478C00;
+        height: 30px;
+        width: 200px;
+
+      }
+
+      .part1:hover{
+        background-color: #83C500;
+      }
+
+      .bar li{
+         float: left;
+       }
+
+
+       .bar {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: #34011E;
+       }
+
+       .bar li a{
+         display: block;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+       }
+
+       .bar li a:hover:not(.active){
+         background-color: #111;
+       }
+
+       .active{
+         background-color: #83C500;
+       }
+
+    </style>
+  </head>
+  <body class="drop">
+    <ul class="bar">
+      <li><a class="active" href="people.html">Home</a></li>
+      <li><a href="display">Database</a></li>
+      <li><a href="addperson.html">Add</a></li>
+      <li><a href="deleteperson.html">Delete</a></li>
+      <li><a href="db">Display</a></li>
+    </ul>
+    <h2 class="hd2">To edit a user enter the following link with the user ID appended at the field which says ID</h2>
+    <li class="hd3">
+      <font size="+2">https://okafor1.herokuapp.com/change/ID</font>
+    </li>
+
+  </body>
+
+</html>

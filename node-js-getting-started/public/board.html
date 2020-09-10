@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Toggle Puzzle</title>
+    <link rel="stylesheet" href="./stylesheets/myboard.css">
+
+  <style>
+    .selected{background-color: black};
+  </style>
+
+  </head>
+  <body>
+    <h1 id="h50">WELCOME TO TOGGLE MASTER!!</h1>
+    <main>
+      <p id="das">
+        STEPS ON HOW TO PLAY!<br>
+        1) Double click to turn cell white if you want to unmark the cell.<br>
+        2) One click to turn cell grey if you want to mark the cell and click again to turn the cell back to default.<br>
+        3) Click "SUBMIT" once done to check if you completed the game correctly.<br>
+        4) Click "RESET" to start again.<br>
+        5) Click "REVEAL" to view the final solution.<br>
+      </p>
+      <table id="t01">
+        <tr>
+          <th></th> <th> <br><br>02 <br> 05 </th> <th><br><br>02 <br> 06</th> <th><br><br>07 <br> 08</th> <th><br><br><br>19</th> <th><br><br><br>19</th> <th> <br><br><br>20</th> <th><br><br><br>20</th> <th><br><br><br>20</th> <th><br><br>13 <br> 06</th> <th><br><br>13 <br> 05</th> <th><br><br>14 <br> 01</th> <th><br><br><br>16</th> <th><br><br>08 <br> 07</th> <th><br><br><br>12</th> <th><br>04 <br> 02 <br> 02</th> <th><br>02 <br> 01 <br> 05</th> <th><br><br>01 <br> 03</th> <th><br><br>02 <br> 05</th> <th>01 <br> 01 <br> 01 <br> 04</th> <th><br><br>02 <br> 02</th>
+        </tr>
+
+        <tr>
+          <th>6  2  2</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+        <tr>
+          <th>12 1</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+        <tr>
+          <th>12</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+        <tr>
+          <th>12</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+        <tr>
+          <th>13</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+        <tr>
+          <th>14</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+        <tr>
+          <th>17</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+        <tr>
+          <th>15 2</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+        <tr>
+          <th>1 9 1</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+        <tr>
+          <th>12</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+        <tr>
+          <th>13</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+        <tr>
+          <th>12 1</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+        <tr>
+          <th>14 2</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+        <tr>
+          <th>8 4 2</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+        <tr>
+          <th>9 3 1 2</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+        <tr>
+          <th>10 2 1 2</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+        <tr>
+          <th>10 4</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+        <tr>
+          <th>10 4</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+        <tr>
+          <th>8 2</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+        <tr>
+          <th>6</th> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+        </tr>
+
+      </table>
+      <form id="f01" class="" action="" method="post">
+        <button id="bttn2" type="button" name="SUBMIT" onclick = "final()">SUBMIT</button>
+        <button id="bttn" type="button" name="RESET" onclick = "derby()">RESET</button>
+        <button id="bttn1" type="button" name="REVEAL" onclick = "show()">REVEAL</button>
+
+      </form>
+
+    </main>
+
+    <script type="text/javascript" src="./boredom.js">
+    </script>
+  </body>
+</html>

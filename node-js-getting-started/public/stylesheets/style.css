@@ -1,0 +1,101 @@
+.btn{
+  -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    padding: 15px;
+    background-color: #478C00;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5%;
+    width: 500px;
+    text-align: center;
+
+}
+
+.btn:hover{
+  background-color: #83C500;
+}
+
+.sec1{
+
+  text-align: center;
+  background: #34011E;
+  color: white;
+  padding-bottom: 80px;
+}
+.sec2{
+
+  position:absolute;
+  bottom: 10%;
+  left: 8%;
+}
+
+.flow{
+  background: #880030;
+}
+
+.sec1 img{
+  /*width: 200px;
+  height: 200px;*/
+  position: relative;
+  top: 50%;
+
+  display: block;
+  background: #478C00;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: 4px solid black;
+}
+
+.drol{
+  text-align: center;
+  font-size: 2em;
+  color: white;
+
+}
+
+
+/*body{
+  color: blue;
+}
+
+.red{
+  background-color: yellow;
+}
+
+#navigate1{
+  font-size: 2em;
+  font-family: cursive;
+  border: 1px solid black;
+}
+
+img{
+  border: 1px solid black;
+  width: 200px;
+  border-radius: 30%;
+  float: left;
+  position: relative;
+  top: 50px;
+  left: 125px;
+  z-index: -1;
+
+}
+
+[type = "text"]{
+  border: 4px solid green;
+
+}
+
+#sfu_link:hover{
+  background-color: white;
+}
+
+form{
+  clear: left;
+}*/

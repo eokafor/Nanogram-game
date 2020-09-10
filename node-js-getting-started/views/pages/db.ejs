@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <style media="screen">
+
+    .drive{
+      color: white;
+      background: #880030;
+    }
+    .hd1{
+      color: white;
+      font-size: 2em;
+    }
+
+   .bar li{
+      float: left;
+    }
+
+
+    .bar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #34011E;
+    }
+
+    .bar li a{
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .bar li a:hover:not(.active){
+      background-color: #111;
+    }
+
+    .active{
+      background-color: #83C500;
+    }
+
+    .hi{
+      text-transform: uppercase;
+      color: white;
+    }
+
+
+  </style>
+</head>
+
+<body class="drive">
+
+
+<div class="container">
+  <ul class="bar">
+    <li><a class="active" href="people.html">Home</a></li>
+    <li><a href="changer.html">Edit</a></li>
+    <li><a href="addperson.html">Add</a></li>
+    <li><a href="deleteperson.html">Delete</a></li>
+    <li><a href="display">Database</a></li>
+  </ul>
+<h2 class="hd1">Visual Display based on Characteristic "size % 5"</h2>
+
+<ul>
+    <% rows.forEach(function(r) { %>
+
+        <% if(r.size % 5 === 0) {%>
+          <li class"hi"><%=r.name%></li><br>
+          <svg width="100" height="50">
+            <rect width="100" height="50" style="fill:green;stroke-width:10;stroke:rgb(0,0,0)" />
+          </svg><br><br>
+        <%}%>
+
+
+        <% if(r.size % 5 === 1) {%>
+          <li class"hi"><%=r.name%></li><br>
+          <svg width="200" height="50">
+            <rect width="200" height="50" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+          </svg><br><br>
+        <%}%>
+
+        <% if(r.size % 5 === 2) {%>
+          <li class"hi"><%=r.name%></li><br>
+          <svg width = "300" height="50">
+            <rect width= "300" height="50" style="fill:yellow;stroke-width:10;stroke:rgb(0,0,0)" />
+          </svg><br><br>
+        <%}%>
+
+        <% if(r.size % 5 === 3){%>
+          <li class"hi"><%=r.name%></li><br>
+          <svg width= "400" height="50">
+            <rect width= "400" height="50" style="fill:pink;stroke-width:10;stroke:rgb(0,0,0)" />
+          </svg><br><br>
+        <%}%>
+
+        <% if(r.size % 5 === 4) {%>
+          <li class"hi"><%=r.name%></li><br>
+          <svg width="500" height="50">
+            <rect width="500" height="50" style="fill:blue;stroke-width:10;stroke:rgb(0,0,0)" />
+          </svg><br><br>
+        <%}%>
+
+        <% if(r.size % 5 === 5) {%>
+          <li class"hi"><%=r.name%></li><br>
+          <svg width="600" height="50">
+            <rect width="600" height="50" style="fill:orange;stroke-width:10;stroke:rgb(0,0,0)" />
+          </svg><br><br>
+        <%}%>
+
+    <% }); %>
+
+</ul>
+
+</div>
+
+</body>
+</html>
