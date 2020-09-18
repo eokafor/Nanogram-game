@@ -1,4 +1,4 @@
-# Nonogram-game
+# Nanogram-game
 This is a logic puzzle with simple rules and challenging solutions.
 
 # The Rules
